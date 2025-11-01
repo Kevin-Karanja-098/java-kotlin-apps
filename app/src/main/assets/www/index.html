@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>KevTech | Offline Mode</title>
+    <style>
+        body {
+          margin: 0;
+          font-family: 'Segoe UI', sans-serif;
+          background: #f4f7f8;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        header, footer {
+          background-color: #00695c;
+          color: white;
+          padding: 12px 20px;
+          text-align: center;
+          width: 100%;
+          font-weight: 600;
+        }
+
+        .container {
+          text-align: center;
+          margin: 20px auto;
+          max-width: 700px;
+          padding: 20px;
+        }
+
+        .avatar {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          background-color: #ddd;
+          display: inline-block;
+          margin-bottom: 10px;
+          background-image: url('https://cdn-icons-png.flaticon.com/512/3135/3135715.png');
+          background-size: cover;
+        }
+
+        .title {
+          font-size: 24px;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+
+        .status {
+          color: #b71c1c;
+          font-weight: 500;
+          margin-bottom: 25px;
+        }
+
+        .card-grid {
+          display: grid;
+          gap: 20px;
+          grid-template-columns: 1fr;
+          max-width: 600px;
+          margin: auto;
+        }
+
+        .card {
+          border-radius: 12px;
+          padding: 20px;
+          color: white;
+          opacity: 0.6;
+          position: relative;
+        }
+
+        .card .offline-msg {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          background: #b71c1c;
+          color: white;
+          padding: 3px 10px;
+          border-radius: 6px;
+          font-size: 12px;
+        }
+
+        .card.green { background-color: #2e7d32; }
+        .card.blue { background-color: #1565c0; }
+        .card.orange { background-color: #ef6c00; }
+
+        .card h3 {
+          margin-top: 0;
+        }
+
+        .reconnect-btn {
+          margin-top: 30px;
+          background: #00695c;
+          color: white;
+          padding: 10px 20px;
+          font-weight: bold;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: background 0.3s ease;
+        }
+
+        .reconnect-btn:hover {
+          background: #004d40;
+        }
+
+        footer {
+          position: fixed;
+          bottom: 0;
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+          padding: 10px 0;
+        }
+
+        footer i {
+          font-size: 20px;
+        }
+
+        @media (min-width: 600px) {
+          .card-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+    </style>
+</head>
+<body>
+<header>KevTech | Offline Mode</header>
+
+<div class="container">
+    <div class="avatar"></div>
+    <div class="title">Hello 👋</div>
+    <p class="status">You're currently <strong>offline</strong>. Some features are disabled.</p>
+
+    <div class="card-grid">
+        <div class="card green">
+            <div class="offline-msg">Offline</div>
+            <h3>💬 Chat with Friends</h3>
+            <p>You're offline. Please reconnect to access the chat system.</p>
+        </div>
+
+        <div class="card blue">
+            <div class="offline-msg">Offline</div>
+            <h3>✍️ Write Blogs</h3>
+            <p>Writing is disabled offline. Reconnect to write blog posts.</p>
+        </div>
+
+        <div class="card orange">
+            <div class="offline-msg">Offline</div>
+            <h3>🔍 Explore Blogs</h3>
+            <p>Content can't be loaded offline. Go online to explore posts.</p>
+        </div>
+    </div>
+
+    <button class="reconnect-btn" onclick="location.reload()">🔄 Reopen App</button>
+</div>
+
+<footer>
+    <i>🏠</i>
+    <i>💬</i>
+    <i>✍️</i>
+    <i>👤</i>
+</footer>
+</body>
+</html>
