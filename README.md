@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="screenshots/logo.jpg" alt="KevTech Logo" width="120" />
+  <img src="screenshots/logo.jpg" alt="KevTech Logo" width="50%" height=50% />
 </p>
 
 <h1 align="center">💬 KevTech — Social Connect App</h1>
