@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="screenshots/logo.png" alt="KevTech Logo" width="120" />
+  <img src="screenshots/logo.jpg" alt="KevTech Logo" width="120" />
 </p>
 
 <h1 align="center">💬 KevTech — Social Connect App</h1>
@@ -56,12 +56,12 @@ KevTech focuses on:
 ### 🧭 First Row
 | Home Feed | Chat Screen | Status | Profile |
 |------------|-------------|---------|----------|
-| ![Home](screenshots/home.png) | ![Chat](screenshots/chat.png) | ![Status](screenshots/status.png) | ![Profile](screenshots/profile.png) |
+| ![Home](screenshots/home.jpg) | ![Chat](screenshots/chat.jpg) | ![Status](screenshots/status.jpg) | ![Profile](screenshots/profile.jpg) |
 
 ### 🚀 Second Row
 | Create Post | Blog View | Notifications | Settings |
 |--------------|------------|----------------|-----------|
-| ![Create](screenshots/create_post.png) | ![Blog](screenshots/blog.png) | ![Notifications](screenshots/notifications.png) | ![Settings](screenshots/settings.png) |
+| ![Create](screenshots/create_post.jpg) | ![Blog](screenshots/blog.jpg) | ![Notifications](screenshots/notifications.jpg) | ![Settings](screenshots/settings.jpg) |
 
 > 🖼️ *All images are located in the `/screenshots` folder.*
 
